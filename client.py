@@ -4,7 +4,7 @@ import json
 import cv2
 
 
-def post_image(img_file):
+def post_image(img_file, URL):
     """ post image and return the response """
     img = open(img_file, 'rb').read()
     response = requests.post(URL, data=img, headers=headers)
